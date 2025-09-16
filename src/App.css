@@ -1,0 +1,98 @@
+:root {
+  --max-width: 1100px;
+  --gap: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #ffffff;
+  color: #222;
+}
+.app {
+  padding: 20px;
+}
+.app-header {
+  max-width: var(--max-width);
+  margin: 0 auto 20px;
+  padding: 8px 0;
+}
+.app-header h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+.app-header .subtitle {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.toolbar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 8px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+.toolbar-btn {
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.toolbar-btn:hover {
+  border-color: #999;
+}
+.toolbar-btn.active {
+  background: #2b2b2b;
+  color: #fff;
+  border-color: #2b2b2b;
+}
+
+.portfolio {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--gap);
+  margin-top: 12px;
+}
+.project-card {
+  background: #f7f7f7;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+}
+.project-thumb {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+.project-thumb img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.no-projects {
+  max-width: var(--max-width);
+  margin: 30px auto;
+  color: #777;
+  font-size: 16px;
+}
